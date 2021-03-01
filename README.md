@@ -24,4 +24,8 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/4YRLdk7u6F.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Signing Up:
+<img src='http://g.recordit.co/gjKYn6vCav.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Signing In and Uploading Post with Caption and Showing Up in Feed
+<img src='http://g.recordit.co/FS3Q3A2kF5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />

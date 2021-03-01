@@ -41,6 +41,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
             }
             
         }
+        
+        dismiss(animated: true, completion: nil)
     }
     
     //when tapping image

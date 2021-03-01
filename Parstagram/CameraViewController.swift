@@ -7,6 +7,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -20,7 +21,26 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var commentField: UITextField!
     @IBAction func onSubmitButton(_ sender: Any) {
+        let post = PFObject(className: "Posts") //pet is like a dictionary
         
+        //create schema (what each column will have 
+        post["caption"] = commentField.text!
+        post["author"] = PFUser.current()! //whoever is the logged in owner
+        
+        let imageData = imageView.image!.pngData() //save image as png
+        let file = PFFileObject(data: imageData!)
+        
+        post["image"] = file
+        
+        post.saveInBackground {(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else{
+                print("error!")
+            }
+            
+        }
     }
     
     //when tapping image

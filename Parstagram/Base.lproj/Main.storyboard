@@ -278,6 +278,32 @@
                                             <outlet property="nameLabel" destination="G6w-du-3i3" id="zlP-fX-1MT"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="4KO-IK-tAa">
+                                        <rect key="frame" x="0.0" y="553" width="414" height="59.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4KO-IK-tAa" id="lFm-uZ-vkA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WS-VW-RuX">
+                                                    <rect key="frame" x="36" y="19" width="350" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="134" id="PTI-2h-MeS"/>
+                                                        <constraint firstAttribute="height" constant="21" id="dzw-zi-vrn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.54479298857868019" green="0.54479298857868019" blue="0.54479298857868019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7WS-VW-RuX" firstAttribute="leading" secondItem="lFm-uZ-vkA" secondAttribute="leadingMargin" constant="16" id="60D-OH-KGU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7WS-VW-RuX" secondAttribute="trailing" constant="8" id="7t9-y8-QME"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7WS-VW-RuX" secondAttribute="bottom" constant="8" id="RCS-Pp-bhF"/>
+                                                <constraint firstItem="7WS-VW-RuX" firstAttribute="top" secondItem="lFm-uZ-vkA" secondAttribute="topMargin" constant="8" id="kwL-GY-fwn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
